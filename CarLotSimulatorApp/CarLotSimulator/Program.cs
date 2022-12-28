@@ -31,6 +31,9 @@ namespace CarLotSimulator
 
             lot.Cars.Add(brandonCar);
 
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
+
+
             // 2nd method (Object Initializer Syntax)
             var stevesCar = new Car()
             {
@@ -44,6 +47,7 @@ namespace CarLotSimulator
             };
 
             lot.Cars.Add(stevesCar);
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
 
             // 3rd Method (Using Constructor to allow parameters placed in properties)
             var dadsCar = new Car(2013, "Toyota", "Tacoma", "Vroom", "Aruga", true);
@@ -54,6 +58,8 @@ namespace CarLotSimulator
             brandonCar.MakeEngineNoise();
             stevesCar.MakeEngineNoise();
             dadsCar.MakeEngineNoise();
+
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
 
             //*************BONUS*************//
 
